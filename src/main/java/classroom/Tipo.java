@@ -1,21 +1,21 @@
 package classroom;
 
 public enum Tipo {
+	
+	
+	
 	DISCIPLINAR(10),FUNDAMENTACION(20),ELECTIVA(30);
 
 	
 	private int codigo;
-
-	private Tipo(int code) {
-		this.codigo = code;
+	private String nombre;
+	private Tipo(int codigo, String nombre) {
+		this.codigo = codigo;
+		this.nombre = nombre;
 	}
 	
-	public int getCreditos() {
-		return codigo;
-	}
-	
-	public void setCreditos(int code) {
-		this.codigo = code;
+	private Tipo(int codigo) {
+		this.codigo = codigo;
 	}
 	
 }
