@@ -2,20 +2,20 @@ package classroom;
 
 public enum Tipo {
 	DISCIPLINAR(10),FUNDAMENTACION(20),ELECTIVA(30);
-	// numero de creditos por materia
-	
-	private int creditos;
 
-	private Tipo(int credits) {
-		this.creditos = credits;
+	
+	private int codigo;
+
+	private Tipo(int code) {
+		this.codigo = code;
 	}
 	
 	public int getCreditos() {
-		return creditos;
+		return codigo;
 	}
 	
-	public void setCreditos(int credits) {
-		this.creditos = credits;
+	public void setCreditos(int code) {
+		this.codigo = code;
 	}
 	
 }
